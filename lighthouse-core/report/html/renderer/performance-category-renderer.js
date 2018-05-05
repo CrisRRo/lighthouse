@@ -29,13 +29,13 @@ class PerformanceCategoryRenderer extends CategoryRenderer {
     const descriptionEl = this.dom.find('.lh-metric__description', tmpl);
     descriptionEl.appendChild(this.dom.convertMarkdownLinkSnippets(audit.result.helpText));
 
-    if (audit.result.error) {
+    if (audit.result.scoreDisplayMode === 'error') {
       element.classList.remove(`lh-metric--fail`);
       element.classList.add(`lh-metric--error`);
       descriptionEl.textContent = '';
       valueEl.textContent = 'Error!';
       const tooltip = this.dom.createChildOf(descriptionEl, 'span', 'lh-error-tooltip-content');
-      tooltip.textContent = audit.result.debugString || 'Report error: no metric information';
+      tooltip.textContent = audit.result.errorMessage || 'Report error: no metric information';
     }
 
     return element;
@@ -58,11 +58,11 @@ class PerformanceCategoryRenderer extends CategoryRenderer {
     titleEl.textContent = audit.result.description;
     this.dom.find('.lh-audit__index', element).textContent = `${index + 1}`;
 
-    if (audit.result.debugString || audit.result.error) {
+    if (audit.result.errorMessage || audit.result.explanation) {
       const debugStrEl = this.dom.createChildOf(summary, 'div', 'lh-debug');
-      debugStrEl.textContent = audit.result.debugString || 'Audit error';
+      debugStrEl.textContent = audit.result.errorMessage || audit.result.explanation;
     }
-    if (audit.result.error) return element;
+    if (audit.result.scoreDisplayMode === 'error') return element;
 
     const details = audit.result.details;
     const summaryInfo = /** @type {!DetailsRenderer.OpportunitySummary}
