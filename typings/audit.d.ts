@@ -124,10 +124,10 @@ declare global {
     /* Audit result returned in Lighthouse report. All audits offer a description and score of 0-1 */
     export interface Result {
       rawValue: boolean | number | null;
-      displayValue: DisplayValue;
+      displayValue?: DisplayValue;
       explanation?: string;
       errorMessage?: string;
-      warnings: string[];
+      warnings?: string[];
       score: number|null;
       scoreDisplayMode: ScoreDisplayMode;
       description: string;

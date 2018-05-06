@@ -186,10 +186,10 @@ class Audit {
       score,
       rawValue: result.rawValue,
 
-      displayValue: result.displayValue || '',
+      displayValue: result.displayValue,
       explanation: result.explanation,
       errorMessage: result.errorMessage,
-      warnings: result.warnings || [],
+      warnings: result.warnings,
 
       extendedInfo: result.extendedInfo,
       scoreDisplayMode,

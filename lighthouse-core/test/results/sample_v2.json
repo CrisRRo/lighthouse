@@ -4,13 +4,14 @@
   "fetchTime": "2018-03-13T00:55:45.840Z",
   "initialUrl": "http://localhost/dobetterweb/dbw_tester.html",
   "url": "http://localhost/dobetterweb/dbw_tester.html",
-  "runWarnings": [],
+  "runWarnings": [
+    "Links to cross-origin destinations are unsafe: Unable to determine href for anchor target=_blank"
+  ],
   "audits": {
     "is-on-https": {
       "score": 0,
       "rawValue": false,
       "displayValue": "1 insecure request found",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -41,8 +42,6 @@
     "redirects-http": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "redirects-http",
       "description": "Does not redirect HTTP traffic to HTTPS",
@@ -51,8 +50,6 @@
     "service-worker": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "service-worker",
       "description": "Does not register a service worker",
@@ -61,7 +58,6 @@
     "works-offline": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
       "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "works-offline",
@@ -71,7 +67,6 @@
     "viewport": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
       "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "viewport",
@@ -81,8 +76,6 @@
     "without-javascript": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "without-javascript",
       "description": "Contains some content when JavaScript is not available",
@@ -95,7 +88,6 @@
         "%10d ms",
         3969.135
       ],
-      "warnings": [],
       "scoreDisplayMode": "numeric",
       "name": "first-contentful-paint",
       "description": "First Contentful Paint",
@@ -108,7 +100,6 @@
         "%10d ms",
         3969.136
       ],
-      "warnings": [],
       "scoreDisplayMode": "numeric",
       "name": "first-meaningful-paint",
       "description": "First meaningful paint",
@@ -117,8 +108,6 @@
     "load-fast-enough-for-pwa": {
       "score": 1,
       "rawValue": 4927.278,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "load-fast-enough-for-pwa",
       "description": "Page load is fast enough on 3G",
@@ -131,7 +120,6 @@
         "%10d ms",
         4417
       ],
-      "warnings": [],
       "scoreDisplayMode": "numeric",
       "name": "speed-index",
       "description": "Speed Index",
@@ -140,8 +128,6 @@
     "screenshot-thumbnails": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "informative",
       "name": "screenshot-thumbnails",
       "description": "Screenshot Thumbnails",
@@ -210,7 +196,6 @@
         "%d ms",
         16
       ],
-      "warnings": [],
       "scoreDisplayMode": "numeric",
       "name": "estimated-input-latency",
       "description": "Estimated Input Latency",
@@ -219,8 +204,6 @@
     "errors-in-console": {
       "score": 0,
       "rawValue": 5,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "errors-in-console",
       "description": "Browser errors were logged to the console",
@@ -272,7 +255,6 @@
       "score": 1,
       "rawValue": 570.5630000000001,
       "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "wastedMs": -29.436999999999898
@@ -295,7 +277,6 @@
         "%10d ms",
         4927.278
       ],
-      "warnings": [],
       "scoreDisplayMode": "numeric",
       "name": "first-cpu-idle",
       "description": "First CPU Idle",
@@ -308,7 +289,6 @@
         "%10d ms",
         4927.278
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "timeInMs": 4927.278,
@@ -324,7 +304,6 @@
       "score": null,
       "rawValue": true,
       "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": []
       },
@@ -342,7 +321,6 @@
       "score": null,
       "rawValue": false,
       "displayValue": "12 chains found",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "chains": {
@@ -662,7 +640,6 @@
         "%d ms",
         0
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "wastedMs": 0
@@ -684,9 +661,7 @@
     "webapp-install-banner": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
       "explanation": "Failures: No manifest was fetched,\nSite does not register a service worker.",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "warnings": [],
@@ -709,9 +684,7 @@
     "splash-screen": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
       "explanation": "Failures: No manifest was fetched.",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "failures": [
@@ -732,9 +705,7 @@
     "themed-omnibox": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
       "explanation": "Failures: No manifest was fetched,\nNo `<meta name=\"theme-color\">` tag found.",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "failures": [
@@ -757,8 +728,6 @@
     "manifest-short-name-length": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "manifest-short-name-length",
       "description": "Manifest's `short_name` will be truncated when displayed on homescreen",
@@ -767,9 +736,7 @@
     "content-width": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
       "explanation": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "content-width",
       "description": "Content is sized correctly for the viewport",
@@ -778,7 +745,6 @@
     "image-aspect-ratio": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
       "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "image-aspect-ratio",
@@ -822,7 +788,6 @@
       "score": 0,
       "rawValue": false,
       "displayValue": "3 warnings found",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -895,7 +860,6 @@
         "%d ms",
         1359.7759999930859
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "Evaluate Script": 1121.2470000088215,
@@ -1018,7 +982,6 @@
         "%10d ms",
         1302.3579999804497
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "http://localhost:10200/dobetterweb/dbw_tester.html": {
@@ -1097,7 +1060,6 @@
         "Potential savings of %10d ms",
         0
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": []
       },
@@ -1121,7 +1083,6 @@
         "Potential savings of %10d ms",
         0
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": []
       },
@@ -1141,8 +1102,6 @@
     "font-display": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "font-display",
       "description": "All text remains visible during webfont loads",
@@ -1156,8 +1115,6 @@
     "network-requests": {
       "score": null,
       "rawValue": 18,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -1540,8 +1497,6 @@
     "metrics": {
       "score": null,
       "rawValue": 4927.278,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "informative",
       "name": "metrics",
       "description": "Metrics",
@@ -1587,8 +1542,6 @@
     "pwa-cross-browser": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "pwa-cross-browser",
       "description": "Site works cross-browser",
@@ -1597,8 +1550,6 @@
     "pwa-page-transitions": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "pwa-page-transitions",
       "description": "Page transitions don't feel like they block on the network",
@@ -1607,8 +1558,6 @@
     "pwa-each-page-has-url": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "pwa-each-page-has-url",
       "description": "Each page has a URL",
@@ -1617,8 +1566,6 @@
     "accesskeys": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "accesskeys",
       "description": "`[accesskey]` values are unique",
@@ -1627,8 +1574,6 @@
     "aria-allowed-attr": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "aria-allowed-attr",
       "description": "`[aria-*]` attributes match their roles",
@@ -1637,8 +1582,6 @@
     "aria-required-attr": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "aria-required-attr",
       "description": "`[role]`s have all required `[aria-*]` attributes",
@@ -1647,8 +1590,6 @@
     "aria-required-children": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "aria-required-children",
       "description": "Elements with `[role]` that require specific children `[role]`s, are present",
@@ -1657,8 +1598,6 @@
     "aria-required-parent": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "aria-required-parent",
       "description": "`[role]`s are contained by their required parent element",
@@ -1667,8 +1606,6 @@
     "aria-roles": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "aria-roles",
       "description": "`[role]` values are valid",
@@ -1677,8 +1614,6 @@
     "aria-valid-attr-value": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "aria-valid-attr-value",
       "description": "`[aria-*]` attributes have valid values",
@@ -1687,8 +1622,6 @@
     "aria-valid-attr": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "aria-valid-attr",
       "description": "`[aria-*]` attributes are valid and not misspelled",
@@ -1697,8 +1630,6 @@
     "audio-caption": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "audio-caption",
       "description": "`<audio>` elements contain a `<track>` element with `[kind=\"captions\"]`",
@@ -1707,8 +1638,6 @@
     "button-name": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "button-name",
       "description": "Buttons have an accessible name",
@@ -1717,8 +1646,6 @@
     "bypass": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {},
       "scoreDisplayMode": "binary",
       "name": "bypass",
@@ -1733,8 +1660,6 @@
     "color-contrast": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "id": "color-contrast",
@@ -1807,8 +1732,6 @@
     "definition-list": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "definition-list",
       "description": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>` or `<template>` elements.",
@@ -1817,8 +1740,6 @@
     "dlitem": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "dlitem",
       "description": "Definition list items are wrapped in `<dl>` elements",
@@ -1827,8 +1748,6 @@
     "document-title": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {},
       "scoreDisplayMode": "binary",
       "name": "document-title",
@@ -1843,8 +1762,6 @@
     "duplicate-id": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {},
       "scoreDisplayMode": "binary",
       "name": "duplicate-id",
@@ -1859,8 +1776,6 @@
     "frame-title": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "frame-title",
       "description": "`<frame>` or `<iframe>` elements have a title",
@@ -1869,8 +1784,6 @@
     "html-has-lang": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "id": "html-has-lang",
@@ -1925,8 +1838,6 @@
     "html-lang-valid": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "html-lang-valid",
       "description": "`<html>` element has a valid value for its `[lang]` attribute",
@@ -1935,8 +1846,6 @@
     "image-alt": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "id": "image-alt",
@@ -2029,8 +1938,6 @@
     "input-image-alt": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "input-image-alt",
       "description": "`<input type=\"image\">` elements have `[alt]` text",
@@ -2039,8 +1946,6 @@
     "label": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "id": "label",
@@ -2134,8 +2039,6 @@
     "layout-table": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "layout-table",
       "description": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
@@ -2144,8 +2047,6 @@
     "link-name": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "id": "link-name",
@@ -2222,8 +2123,6 @@
     "list": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "list",
       "description": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
@@ -2232,8 +2131,6 @@
     "listitem": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "listitem",
       "description": "List items (`<li>`) are contained within `<ul>` or `<ol>` parent elements",
@@ -2242,8 +2139,6 @@
     "meta-refresh": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "meta-refresh",
       "description": "The document does not use `<meta http-equiv=\"refresh\">`",
@@ -2252,8 +2147,6 @@
     "meta-viewport": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {},
       "scoreDisplayMode": "binary",
       "name": "meta-viewport",
@@ -2268,8 +2161,6 @@
     "object-alt": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "object-alt",
       "description": "`<object>` elements have `[alt]` text",
@@ -2278,8 +2169,6 @@
     "tabindex": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "tabindex",
       "description": "No element has a `[tabindex]` value greater than 0",
@@ -2288,8 +2177,6 @@
     "td-headers-attr": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "td-headers-attr",
       "description": "Cells in a `<table>` element that use the `[headers]` attribute only refer to other cells of that same table.",
@@ -2298,8 +2185,6 @@
     "th-has-data-cells": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "th-has-data-cells",
       "description": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
@@ -2308,8 +2193,6 @@
     "valid-lang": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "valid-lang",
       "description": "`[lang]` attributes have a valid value",
@@ -2318,8 +2201,6 @@
     "video-caption": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "video-caption",
       "description": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
@@ -2328,8 +2209,6 @@
     "video-description": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "video-description",
       "description": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
@@ -2338,8 +2217,6 @@
     "custom-controls-labels": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "custom-controls-labels",
       "description": "Custom controls have associated labels",
@@ -2348,8 +2225,6 @@
     "custom-controls-roles": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "custom-controls-roles",
       "description": "Custom controls have ARIA roles",
@@ -2358,8 +2233,6 @@
     "focus-traps": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "focus-traps",
       "description": "User focus is not accidentally trapped in a region",
@@ -2368,8 +2241,6 @@
     "focusable-controls": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "focusable-controls",
       "description": "Interactive controls are keyboard focusable",
@@ -2378,8 +2249,6 @@
     "heading-levels": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "heading-levels",
       "description": "Headings don't skip levels",
@@ -2388,8 +2257,6 @@
     "logical-tab-order": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "logical-tab-order",
       "description": "The page has a logical tab order",
@@ -2398,8 +2265,6 @@
     "managed-focus": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "managed-focus",
       "description": "The user's focus is directed to new content added to the page",
@@ -2408,8 +2273,6 @@
     "offscreen-content-hidden": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "offscreen-content-hidden",
       "description": "Offscreen content is hidden from assistive technology",
@@ -2418,8 +2281,6 @@
     "use-landmarks": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "use-landmarks",
       "description": "HTML5 landmark elements are used to improve navigation",
@@ -2428,8 +2289,6 @@
     "visual-order-follows-dom": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "visual-order-follows-dom",
       "description": "Visual order on the page follows DOM order",
@@ -2439,7 +2298,6 @@
       "score": 0.58,
       "rawValue": 103455,
       "displayValue": "11 assets found",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "results": [
@@ -2663,7 +2521,6 @@
         "Total size was %d KB",
         156.970703125
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "results": [
@@ -2830,7 +2687,6 @@
       "score": 0,
       "rawValue": 1129,
       "displayValue": "5 resources delayed first paint by 1129ms",
-      "warnings": [],
       "scoreDisplayMode": "numeric",
       "name": "render-blocking-resources",
       "description": "Eliminate render-blocking resources",
@@ -2893,7 +2749,6 @@
       "score": 1,
       "rawValue": 0,
       "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "wastedMs": 0,
@@ -2982,7 +2837,6 @@
       "score": 1,
       "rawValue": 0,
       "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "wastedMs": 0,
@@ -3107,7 +2961,6 @@
         "Potential savings of %d KB",
         63
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "wastedMs": 150,
@@ -3201,7 +3054,6 @@
       "score": 1,
       "rawValue": 0,
       "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "wastedMs": 0,
@@ -3227,7 +3079,6 @@
       "score": 0,
       "rawValue": false,
       "displayValue": "Found \"clock.appcache\"",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "appcache-manifest",
       "description": "Uses Application Cache",
@@ -3240,7 +3091,6 @@
         "%d nodes",
         53
       ],
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -3291,7 +3141,6 @@
     "external-anchors-use-rel-noopener": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
       "warnings": [
         "Unable to determine href for anchor target=_blank"
       ],
@@ -3365,8 +3214,6 @@
     "geolocation-on-start": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -3504,8 +3351,6 @@
     "no-document-write": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -3697,7 +3542,6 @@
     "no-mutation-events": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
       "warnings": [],
       "extendedInfo": {
         "value": {
@@ -3830,7 +3674,6 @@
       "score": 0,
       "rawValue": false,
       "displayValue": "1 vulnerability was detected.",
-      "warnings": [],
       "extendedInfo": {
         "jsLibs": [
           {
@@ -3901,7 +3744,6 @@
       "score": 0,
       "rawValue": false,
       "displayValue": "Found \"mydb\" (v1.0)",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "no-websql",
       "description": "Uses WebSQL DB",
@@ -3910,8 +3752,6 @@
     "notification-on-start": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -3995,8 +3835,6 @@
     "password-inputs-can-be-pasted-into": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -4040,7 +3878,6 @@
       "score": 0,
       "rawValue": false,
       "displayValue": "15 requests were not handled over HTTP/2",
-      "warnings": [],
       "extendedInfo": {
         "value": {
           "results": [
@@ -4192,8 +4029,6 @@
     "uses-passive-event-listeners": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "extendedInfo": {
         "value": [
           {
@@ -4385,8 +4220,6 @@
     "meta-description": {
       "score": 0,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "meta-description",
       "description": "Document does not have a meta description",
@@ -4395,8 +4228,6 @@
     "http-status-code": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "http-status-code",
       "description": "Page has successful HTTP status code",
@@ -4409,7 +4240,6 @@
         "%.1d% legible text",
         100
       ],
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "font-size",
       "description": "Document uses legible font sizes",
@@ -4451,8 +4281,6 @@
     "link-text": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "link-text",
       "description": "Links have descriptive text",
@@ -4467,9 +4295,7 @@
     "is-crawlable": {
       "score": null,
       "rawValue": null,
-      "displayValue": "",
       "errorMessage": "Audit error: Required RobotsTxt gatherer did not run.",
-      "warnings": [],
       "scoreDisplayMode": "error",
       "name": "is-crawlable",
       "description": "Page is blocked from indexing",
@@ -4478,9 +4304,7 @@
     "robots-txt": {
       "score": null,
       "rawValue": null,
-      "displayValue": "",
       "errorMessage": "Audit error: Required RobotsTxt gatherer did not run.",
-      "warnings": [],
       "scoreDisplayMode": "error",
       "name": "robots-txt",
       "description": "robots.txt is not valid",
@@ -4489,8 +4313,6 @@
     "hreflang": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "hreflang",
       "description": "Document has a valid `hreflang`",
@@ -4504,8 +4326,6 @@
     "plugins": {
       "score": 1,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "binary",
       "name": "plugins",
       "description": "Document avoids plugins",
@@ -4519,8 +4339,6 @@
     "canonical": {
       "score": null,
       "rawValue": true,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "not-applicable",
       "name": "canonical",
       "description": "Document has a valid `rel=canonical`",
@@ -4529,8 +4347,6 @@
     "mobile-friendly": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "mobile-friendly",
       "description": "Page is mobile friendly",
@@ -4539,8 +4355,6 @@
     "structured-data": {
       "score": null,
       "rawValue": false,
-      "displayValue": "",
-      "warnings": [],
       "scoreDisplayMode": "manual",
       "name": "structured-data",
       "description": "Structured data is valid",

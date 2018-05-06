@@ -209,7 +209,7 @@ if (typeof module !== 'undefined' && module.exports) {
  *     description: string,
  *     explanation: (string|undefined),
  *     errorMessage: (string|undefined),
- *     displayValue: (string|Array<string|number>),
+ *     displayValue: (string|Array<string|number>|undefined),
  *     helpText: string,
  *     scoreDisplayMode: string,
  *     extendedInfo: Object,

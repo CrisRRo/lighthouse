@@ -114,7 +114,7 @@ class Runner {
       for (const audit of auditResults) {
         resultsById[audit.name] = audit;
 
-        if (audit.warnings.length) {
+        if (audit.warnings && audit.warnings.length) {
           const prefixedWarnings = audit.warnings.map(msg => `${audit.description}: ${msg}`);
           lighthouseRunWarnings.push(...prefixedWarnings);
         }
