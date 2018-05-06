@@ -15,6 +15,7 @@ const RATINGS = {
   PASS: {label: 'pass', minScore: PASS_THRESHOLD},
   AVERAGE: {label: 'average', minScore: 0.45},
   FAIL: {label: 'fail'},
+  ERROR: {label: 'error'},
 };
 
 /**
@@ -71,8 +72,8 @@ class Util {
   }
 
   /**
-   *
-   * @param {{score: number|null, scoreDisplayMode: string}} audit
+   * @param {{score: (number|null), scoreDisplayMode: string}} audit
+   * @return {boolean}
    */
   static didAuditPass(audit) {
     switch (audit.scoreDisplayMode) {
@@ -84,7 +85,8 @@ class Util {
         return false;
       case 'numeric':
       case 'binary':
-        return audit.score === 1;
+      default:
+        return Number(audit.score) > PASS_THRESHOLD;
     }
   }
 
@@ -95,9 +97,11 @@ class Util {
    * @return {string}
    */
   static calculateRating(score, scoreDisplayMode) {
-    // Handle edge cases first, manual and not applicable receive 'pass', errored audits receive 'fail'
+    // Handle edge cases first, manual and not applicable receive 'pass', errored audits receive 'error'
     if (scoreDisplayMode === 'manual' || scoreDisplayMode === 'not-applicable') {
       return RATINGS.PASS.label;
+    } else if (scoreDisplayMode === 'error') {
+      return RATINGS.ERROR.label;
     } else if (score === null) {
       return RATINGS.FAIL.label;
     }
